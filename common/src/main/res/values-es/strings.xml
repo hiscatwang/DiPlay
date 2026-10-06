@@ -167,7 +167,7 @@
     <string name="custom_1_1_icon">Icono personalizado 1:1</string>
     <string name="debug_logs">Registros de depuración</string>
     <string name="default_icon">Icono predeterminado</string>
-    <string name="default_placeholder_icon">Icono ORA predeterminado</string>
+    <string name="default_placeholder_icon">Icono DiPlay predeterminado</string>
     <string name="diagnostic_report_saved">Informe de diagnóstico guardado</string>
     <string name="diagnostics">Diagnóstico</string>
     <string name="discard_changes_and_exit_settings">Descartar cambios y salir de los ajustes</string>

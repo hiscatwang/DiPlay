@@ -1,3 +1,13 @@
+# Universal build branding (2026-10-06)
+
+This universal build uses the existing green DiPlay icon from
+`common/src/main/res/drawable/ic_carplay.png`, copied without changes to
+`common/src/main/res/raw/ic_car_home.png`. Its return-to-car label is "返回车机".
+The ORA raw image described below is no longer packaged in this build.
+Existing upstream asset ownership and licence notices still apply.
+
+The following notes describe the earlier ORA-specific build for provenance.
+
 # ORA return-to-car icon
 
 The ORA compatibility build uses the brand's published square image for CarPlay's

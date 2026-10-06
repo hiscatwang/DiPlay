@@ -171,7 +171,7 @@
     <string name="custom_1_1_icon">Власний значок 1:1</string>
     <string name="debug_logs">Журнали налагодження</string>
     <string name="default_icon">Типовий значок</string>
-    <string name="default_placeholder_icon">Типовий значок ORA</string>
+    <string name="default_placeholder_icon">Типовий значок DiPlay</string>
     <string name="diagnostic_report_saved">Діагностичний звіт збережено</string>
     <string name="diagnostics">Діагностика</string>
     <string name="diplay">Diplay</string>

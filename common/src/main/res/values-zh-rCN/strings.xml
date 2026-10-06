@@ -164,7 +164,7 @@
     <string name="custom_1_1_icon">自定义 1:1 图标</string>
     <string name="debug_logs">调试日志</string>
     <string name="default_icon">默认图标</string>
-    <string name="default_placeholder_icon">默认欧拉图标</string>
+    <string name="default_placeholder_icon">默认 DiPlay 图标</string>
     <string name="diagnostic_report_saved">诊断报告已保存</string>
     <string name="diagnostics">诊断</string>
     <string name="diplay">Diplay</string>

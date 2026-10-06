@@ -90,7 +90,7 @@ object AirPlayPersistence {
 
     const val DEFAULT_MANUFACTURER = "DiPlay"
     const val DEFAULT_MODEL = "DiPlay"
-    const val DEFAULT_OEM_LABEL = "欧拉"
+    const val DEFAULT_OEM_LABEL = "返回车机"
     const val DEFAULT_MFI_I2C_PATH = "/dev/i2c-1"
 
     fun loadAmbientDelaySeconds(context: Context): Int =
@@ -428,9 +428,9 @@ object AirPlayPersistence {
     fun loadOemLabel(context: Context): String {
         val prefs = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
         val saved = prefs.getString(KEY_OEM_LABEL, null).orEmpty()
-        // Earlier builds could persist the upstream default when saving unrelated settings.
+        // Earlier builds could persist the upstream or ORA default when saving unrelated settings.
         val legacy = saved.trim().equals("BYD", ignoreCase = true) ||
-            saved.trim() in setOf("比亚迪", "比亞迪")
+            saved.trim() in setOf("比亚迪", "比亞迪", "欧拉", "歐拉")
         if (legacy) prefs.edit().putString(KEY_OEM_LABEL, DEFAULT_OEM_LABEL).apply()
         // iOS hides the car icon without a label. Preserve other user-chosen names.
         return if (legacy || saved.isBlank()) DEFAULT_OEM_LABEL else saved

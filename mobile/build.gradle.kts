@@ -20,7 +20,7 @@ android {
         versionCode = 41
         versionName = "0.2.10"
         ndk {
-            abiFilters += listOf("x86", "x86_64")
+            abiFilters += listOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
         }
 
     }
@@ -43,7 +43,7 @@ android {
     buildTypes {
         debug {
             applicationIdSuffix = ".ora81"
-            versionNameSuffix = "-ora-android81-test12-siri"
+            versionNameSuffix = "-ora-android81-test12-siri-universal"
         }
         release {
             optimization {

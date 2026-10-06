@@ -167,7 +167,7 @@
     <string name="custom_1_1_icon">Пользовательский значок 1:1</string>
     <string name="debug_logs">Отладочные журналы</string>
     <string name="default_icon">Значок по умолчанию</string>
-    <string name="default_placeholder_icon">Значок ORA по умолчанию</string>
+    <string name="default_placeholder_icon">Значок DiPlay по умолчанию</string>
     <string name="diagnostic_report_saved">Диагностический отчёт сохранён</string>
     <string name="diagnostics">Диагностика</string>
     <string name="discard_changes_and_exit_settings">Отменить изменения и выйти из настроек</string>

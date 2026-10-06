@@ -167,7 +167,7 @@
     <string name="custom_1_1_icon">أيقونة مخصصة 1:1</string>
     <string name="debug_logs">سجلات تصحيح</string>
     <string name="default_icon">الأيقونة الافتراضية</string>
-    <string name="default_placeholder_icon">أيقونة ORA الافتراضية</string>
+    <string name="default_placeholder_icon">أيقونة DiPlay الافتراضية</string>
     <string name="diagnostic_report_saved">تم حفظ تقرير التشخيص</string>
     <string name="diagnostics">التشخيص</string>
     <string name="discard_changes_and_exit_settings">تجاهل التغييرات والخروج من الإعدادات</string>
