@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="existing_wifi_title">شبكة Wi-Fi موجودة / نفس الشبكة المحلية</string>
+    <string name="existing_wifi_description">استخدم جهاز توجيه أو Wi-Fi محمولاً موجوداً. أبقِ iPhone والسيارة على الشبكة نفسها مع اتصال بالإنترنت.</string>
+    <string name="existing_wifi_hint">Wi-Fi موجودة · أبقِ الجهازين على شبكة Wi-Fi نفسها والبلوتوث قيد التشغيل. لا تحتاج إلى نقطة اتصال السيارة.</string>
+    <string name="existing_wifi_instructions">وصّل السيارة وiPhone بشبكة Wi-Fi خارجية واحدة في إعدادات النظام. أدخل اسمها الدقيق وكلمة مرور WPA2؛ اترك كلمة المرور فارغة للشبكة المفتوحة فقط. استخدم WPA2 أو الوضع المختلط WPA2/WPA3 وأوقف عزل الأجهزة في جهاز التوجيه. يحتفظ DiPlay بهذا الاتصال ولا ينشئ نقطة اتصال.</string>
+    <string name="existing_wifi_details">بيانات شبكة Wi-Fi الخارجية</string>
+    <string name="existing_wifi_ssid">اسم شبكة Wi-Fi الخارجية (SSID)</string>
+    <string name="existing_wifi_password">كلمة مرور شبكة Wi-Fi الخارجية</string>
+    <string name="existing_wifi_attaching">الاتصال بشبكة Wi-Fi الموجودة</string>
+    <string name="existing_wifi_ready">شبكة Wi-Fi الموجودة جاهزة: %1$s · %2$s · القناة %3$d · %4$s</string>
     <string name="built_in_car_hotspot">نقطة اتصال السيارة المدمجة</string>
     <string name="hotspot_hint_manual">نقطة اتصال السيارة المدمجة · أبقِ نقطة الاتصال والبلوتوث وواي فاي iPhone مُفعّلة.</string>
     <string name="hotspot_hint_local">افتح إعداد الاتصال لحفظ بيانات نقطة اتصال السيارة المدمجة.</string>
@@ -490,4 +499,9 @@
     <string name="waiting_for_car_hotspot">بانتظار اكتمال تشغيل نقطة اتصال السيارة… سيستمر الاتصال تلقائيًا.</string>
     <string name="car_hotspot_startup_hint">نقطة الاتصال ليست جاهزة بعد. سينتظر الاتصال حتى تنتهي السيارة من تشغيلها.</string>
     <string name="car_hotspot_wait_timeout">نقطة اتصال السيارة ليست جاهزة. تجري إعادة المحاولة تلقائيًا؛ تأكد من تشغيل نقطة الاتصال.</string>
+    <string name="hotspot_network_not_ready">شبكة نقطة الاتصال غير جاهزة</string>
+    <string name="first_tcp_timeout">لم يتصل iPhone بـ CarPlay في الوقت المحدد</string>
+    <string name="wireless_startup_retries_exhausted">توقفت المحاولات التلقائية. تحقق من الاتصال ثم أعد المحاولة يدويًا.</string>
+    <string name="retry_carplay_connection">إعادة محاولة الاتصال</string>
+    <string name="existing_wifi_not_ready">شبكة Wi-Fi غير جاهزة. وصّل السيارة وiPhone بشبكة Wi-Fi نفسها.</string>
 </resources>

@@ -1,4 +1,10 @@
-# DiPlay v12 Android 8.1 multi-ABI build
+# DiPlay Android 8.1 multi-ABI builds
+
+The current branch is v14 (versionCode 43), based on v12 universal, with Same LAN
+and startup recovery. See [V14_LAN_RETRY.md](V14_LAN_RETRY.md).
+The following records the original v12 universal architecture port.
+
+## Historical v12 port
 
 This local 2026-10-06 build extends the original v12 (siri) package with
 `armeabi-v7a` (32-bit ARMv7) and `arm64-v8a` (64-bit ARMv8). Existing `x86` and

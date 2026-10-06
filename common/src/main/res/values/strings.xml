@@ -1,4 +1,13 @@
 <resources>
+    <string name="existing_wifi_title">Existing Wi-Fi / Same LAN</string>
+    <string name="existing_wifi_description">Use an existing router or portable Wi-Fi. Keep the iPhone and car on the same network with Internet access.</string>
+    <string name="existing_wifi_hint">Existing Wi-Fi · Keep both devices on the same Wi-Fi and Bluetooth on. No car hotspot is needed.</string>
+    <string name="existing_wifi_instructions">Connect the car and iPhone to the same external Wi-Fi in system settings. Enter its exact name and WPA2 password below; leave the password empty only for an open network. Use WPA2 or WPA2/WPA3 mixed mode and disable client isolation on the router. DiPlay keeps this Wi-Fi connection and creates no hotspot.</string>
+    <string name="existing_wifi_details">External Wi-Fi details</string>
+    <string name="existing_wifi_ssid">External Wi-Fi name (SSID)</string>
+    <string name="existing_wifi_password">External Wi-Fi password</string>
+    <string name="existing_wifi_attaching">Attaching to existing Wi-Fi</string>
+    <string name="existing_wifi_ready">Existing Wi-Fi ready: %1$s · %2$s · channel %3$d · %4$s</string>
     <string name="built_in_car_hotspot">Built-in car hotspot</string>
     <string name="wifi_direct">Wi-Fi Direct</string>
     <string name="hotspot_hint_manual">Built-in car hotspot · Keep the car hotspot, Bluetooth and your iPhone’s Wi-Fi on.</string>
@@ -489,4 +498,9 @@
     <string name="waiting_for_car_hotspot">Waiting for the car hotspot to finish starting… Connection will continue automatically.</string>
     <string name="car_hotspot_startup_hint">The hotspot is not ready yet. Connecting will wait for the car to finish starting it.</string>
     <string name="car_hotspot_wait_timeout">The car hotspot is not ready. Retrying automatically; check that the hotspot is enabled.</string>
+    <string name="hotspot_network_not_ready">Hotspot network is not ready</string>
+    <string name="first_tcp_timeout">The iPhone did not connect to CarPlay in time</string>
+    <string name="wireless_startup_retries_exhausted">Automatic retries stopped. Check the connection and retry manually.</string>
+    <string name="retry_carplay_connection">Retry connection</string>
+    <string name="existing_wifi_not_ready">Wi-Fi network is not ready. Connect the car and iPhone to the same Wi-Fi.</string>
 </resources>

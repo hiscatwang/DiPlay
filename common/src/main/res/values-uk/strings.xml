@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="existing_wifi_title">Наявна Wi-Fi / Одна LAN</string>
+    <string name="existing_wifi_description">Використовуйте наявний роутер або портативну Wi-Fi. iPhone та автомобіль залишаються в одній мережі з доступом до Інтернету.</string>
+    <string name="existing_wifi_hint">Наявна Wi-Fi · Підключіть обидва пристрої до однієї Wi-Fi та увімкніть Bluetooth. Точка доступу автомобіля не потрібна.</string>
+    <string name="existing_wifi_instructions">У системних налаштуваннях підключіть автомобіль та iPhone до однієї зовнішньої Wi-Fi. Введіть її точне ім’я та пароль WPA2; залиште пароль порожнім лише для відкритої мережі. Використовуйте WPA2 або змішаний режим WPA2/WPA3 і вимкніть ізоляцію клієнтів на роутері. DiPlay зберігає це підключення та не створює точку доступу.</string>
+    <string name="existing_wifi_details">Дані зовнішньої Wi-Fi</string>
+    <string name="existing_wifi_ssid">Назва зовнішньої Wi-Fi (SSID)</string>
+    <string name="existing_wifi_password">Пароль зовнішньої Wi-Fi</string>
+    <string name="existing_wifi_attaching">Підключення до наявної Wi-Fi</string>
+    <string name="existing_wifi_ready">Наявна Wi-Fi готова: %1$s · %2$s · канал %3$d · %4$s</string>
     <string name="built_in_car_hotspot">Вбудована точка доступу автомобіля</string>
     <string name="wifi_direct">Wi-Fi Direct</string>
     <string name="hotspot_hint_manual">Вбудована точка доступу · Тримайте точку доступу автомобіля, Bluetooth і Wi-Fi на iPhone увімкненими.</string>
@@ -490,4 +499,9 @@
     <string name="waiting_for_car_hotspot">Очікування запуску точки доступу автомобіля… Підключення продовжиться автоматично.</string>
     <string name="car_hotspot_startup_hint">Точка доступу ще не готова. Підключення зачекає, поки автомобіль завершить її запуск.</string>
     <string name="car_hotspot_wait_timeout">Точка доступу автомобіля не готова. Повторна спроба відбудеться автоматично; переконайтеся, що точку доступу ввімкнено.</string>
+    <string name="hotspot_network_not_ready">Мережа точки доступу не готова</string>
+    <string name="first_tcp_timeout">iPhone не підключився до CarPlay вчасно</string>
+    <string name="wireless_startup_retries_exhausted">Автоматичні спроби зупинено. Перевірте підключення та повторіть спробу вручну.</string>
+    <string name="retry_carplay_connection">Повторити підключення</string>
+    <string name="existing_wifi_not_ready">Мережа Wi-Fi не готова. Підключіть автомобіль та iPhone до однієї мережі Wi-Fi.</string>
 </resources>

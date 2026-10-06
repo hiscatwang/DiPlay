@@ -34,6 +34,7 @@ class WirelessModeCompatibilityTest {
             is ViewGroup -> (0 until view.childCount).flatMap { texts(view.getChildAt(it)) }
             else -> emptyList()
         }
+        assertTrue(texts(parent).any { it.contains(activity.getString(R.string.existing_wifi_title)) })
         assertFalse(texts(parent).any { it.contains(activity.getString(R.string.wifi_direct)) })
         assertTrue(texts(parent).any { it.contains(activity.getString(R.string.built_in_car_hotspot)) })
     }

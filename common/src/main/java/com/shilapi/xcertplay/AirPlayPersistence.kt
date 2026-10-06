@@ -288,8 +288,8 @@ object AirPlayPersistence {
 
     fun availableWirelessHotspotModes(): List<WirelessHotspotMode> =
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            listOf(WirelessHotspotMode.MANUAL, WirelessHotspotMode.WIFI_P2P)
-        } else listOf(WirelessHotspotMode.MANUAL)
+            listOf(WirelessHotspotMode.MANUAL, WirelessHotspotMode.WIFI_P2P, WirelessHotspotMode.EXISTING_WIFI)
+        } else listOf(WirelessHotspotMode.MANUAL, WirelessHotspotMode.EXISTING_WIFI)
 
     fun loadWirelessHotspotMode(context: Context): WirelessHotspotMode {
         val prefs = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
@@ -306,6 +306,20 @@ object AirPlayPersistence {
         context.getSharedPreferences(PREFS, Context.MODE_PRIVATE).edit()
             .putString(KEY_WIRELESS_HOTSPOT_MODE, supported.name)
             .apply()
+    }
+
+    fun loadExistingWifiSsid(context: Context): String =
+        context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
+            .getString("existing_wifi_ssid", "").orEmpty()
+
+    fun loadExistingWifiPassphrase(context: Context): String =
+        context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
+            .getString("existing_wifi_passphrase", "").orEmpty()
+
+    fun saveExistingWifiCredentials(context: Context, ssid: String, passphrase: String) {
+        context.getSharedPreferences(PREFS, Context.MODE_PRIVATE).edit()
+            .putString("existing_wifi_ssid", ssid)
+            .putString("existing_wifi_passphrase", passphrase).apply()
     }
 
     fun loadManualHotspotSsid(context: Context): String =

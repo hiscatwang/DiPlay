@@ -14,7 +14,20 @@ class ManualHotspotReadinessTest {
         state: () -> Boolean? = { enabled },
         probe: () -> String? = { "ap0" },
         sleep: (Long) -> Unit = { now += it },
-    ) = awaitManualHotspot(timeout, { closed }, state, probe, messages::add, { now }, sleep)
+    ) = awaitManualHotspot(timeout, { closed }, state, probe, messages::add, nanoTime = { now }, sleepNanos = sleep)
+
+    @Test fun movingInterfaceMustSettleBeforeItIsPublished() {
+        val result = awaitManualHotspot(5_000, { false }, { true },
+            { if (now < 1_000_000_000L) "old-address" else "new-address" }, messages::add,
+            stableSamples = 3, nanoTime = { now }, sleepNanos = { now += it })
+        assertEquals("new-address", result)
+        assertEquals(2_000_000_000L, now)
+    }
+
+    @Test fun timeoutHasRecoverableClassification() {
+        val error = assertThrows(WirelessStartupException::class.java) { waitFor(timeout = 10) }
+        assertEquals(WirelessStartupFailure.HOTSPOT_NOT_READY, error.reason)
+    }
 
     @Test fun coldBootCanTakeNinetySecondsAndLogsOnlyStateChanges() {
         var probes = 0

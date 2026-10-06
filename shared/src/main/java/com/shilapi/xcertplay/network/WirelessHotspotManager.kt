@@ -8,9 +8,10 @@ enum class WirelessHotspotBackend(val label: String) {
     WIFI_P2P("Wi-Fi P2P"),
     LOCAL_ONLY_HOTSPOT("LocalOnlyHotspot"),
     MANUAL_HOTSPOT("Manual hotspot"),
+    EXISTING_WIFI("Existing Wi-Fi / Same LAN"),
 }
 
-/** The live Wi-Fi credentials and interface details for one wireless CarPlay hotspot. */
+/** The live Wi-Fi credentials and interface details for a wireless CarPlay network. */
 class WirelessHotspotInfo(
     val ssid: String,
     val passphrase: String,
@@ -22,6 +23,10 @@ class WirelessHotspotInfo(
     val hostAddress: InetAddress?,
     val bandLabel: String,
     val backend: WirelessHotspotBackend,
+    /** Addresses on the selected interface that discovery and TCP must both serve. */
+    val hostAddresses: List<InetAddress> = listOfNotNull(hostAddress),
+    /** Wi-Fi AP hint for 0x5703; independent of the receiver's AirPlay identity in [bssid]. */
+    val accessPointBssid: ByteArray? = null,
 ) {
     override fun toString(): String =
         "WirelessHotspotInfo(backend=${backend.label}, ssid='$ssid', " +
@@ -30,13 +35,16 @@ class WirelessHotspotInfo(
             "hostAddress=$hostAddress, bandLabel='$bandLabel')"
 }
 
-/** Owns one Android Wi-Fi group and all resources needed to keep it alive. */
+/** Prepares a wireless network and owns only the resources acquired by this manager. */
 interface WirelessHotspotManager : Closeable {
     /**
-     * Starts a hotspot and waits up to [timeoutMillis] for its live configuration and AP
-     * interface. Implementations must not be called on the main thread.
+     * Creates or attaches to a wireless network and waits up to [timeoutMillis] for its live
+     * configuration and interface. Implementations must not be called on the main thread.
      */
     fun start(timeoutMillis: Long): WirelessHotspotInfo
+
+    /** Rechecks the selected interface before publication and session handoff. */
+    fun validateReady() {}
 
     /** The authenticated wireless session has rendered CarPlay; AP creation alone is insufficient. */
     fun onCarPlayConfirmed() {}

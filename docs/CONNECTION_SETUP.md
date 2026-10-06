@@ -35,6 +35,14 @@ required; phone internet availability depends on its network settings.
 If you change the car hotspot name or password, update it in the app too.
 Test one projection app at a time.
 
+EXISTING WI-FI / SAME LAN — DIPLAY
+Connect the car and iPhone to the same external router or portable Wi-Fi in
+system settings. In DiPlay Connection setup, select Existing Wi-Fi / Same LAN
+and save that network's exact name and WPA2 password. Keep Bluetooth enabled,
+then connect as usual. No car hotspot or Wi-Fi Direct group is created. Disable
+router client isolation. See [Existing Wi-Fi](EXISTING_WIFI.md) for build
+requirements, network limitations and device validation.
+
 OPTIONAL: DIPLAY AUTOMATIC INSTRUMENT MAP
 On the supported DiLink 5.1 firmware, open Settings → BYD navigation →
 Automatic map setup · ADB. Follow the displayed one-time computer setup,

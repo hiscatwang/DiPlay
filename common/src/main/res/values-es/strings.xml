@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="existing_wifi_title">Wi-Fi existente / Misma LAN</string>
+    <string name="existing_wifi_description">Usa un router o Wi-Fi portátil existente. Mantén el iPhone y el coche en la misma red con acceso a Internet.</string>
+    <string name="existing_wifi_hint">Wi-Fi existente · Mantén ambos dispositivos en la misma Wi-Fi y el Bluetooth activado. No necesitas el punto de acceso del coche.</string>
+    <string name="existing_wifi_instructions">Conecta el coche y el iPhone a la misma Wi-Fi externa en los ajustes del sistema. Introduce su nombre exacto y contraseña WPA2; deja la contraseña vacía solo para una red abierta. Usa WPA2 o el modo mixto WPA2/WPA3 y desactiva el aislamiento de clientes del router. DiPlay mantiene esta conexión y no crea un punto de acceso.</string>
+    <string name="existing_wifi_details">Datos de Wi-Fi externa</string>
+    <string name="existing_wifi_ssid">Nombre de Wi-Fi externa (SSID)</string>
+    <string name="existing_wifi_password">Contraseña de Wi-Fi externa</string>
+    <string name="existing_wifi_attaching">Conectando a Wi-Fi existente</string>
+    <string name="existing_wifi_ready">Wi-Fi existente lista: %1$s · %2$s · canal %3$d · %4$s</string>
     <string name="built_in_car_hotspot">Punto de acceso integrado del coche</string>
     <string name="hotspot_hint_manual">Punto de acceso integrado · Mantén activos el punto de acceso, el Bluetooth y el Wi‑Fi del iPhone.</string>
     <string name="hotspot_hint_local">Abre la configuración de conexión para guardar los datos del punto de acceso integrado.</string>
@@ -490,4 +499,9 @@
     <string name="waiting_for_car_hotspot">Esperando a que se inicie el punto de acceso del coche… La conexión continuará automáticamente.</string>
     <string name="car_hotspot_startup_hint">El punto de acceso aún no está listo. La conexión esperará a que el coche termine de iniciarlo.</string>
     <string name="car_hotspot_wait_timeout">El punto de acceso del coche no está listo. Se reintentará automáticamente; comprueba que esté activado.</string>
+    <string name="hotspot_network_not_ready">La red del punto de acceso no está lista</string>
+    <string name="first_tcp_timeout">El iPhone no se conectó a CarPlay a tiempo</string>
+    <string name="wireless_startup_retries_exhausted">Los reintentos automáticos se han detenido. Comprueba la conexión y vuelve a intentarlo manualmente.</string>
+    <string name="retry_carplay_connection">Reintentar conexión</string>
+    <string name="existing_wifi_not_ready">La red Wi-Fi no está lista. Conecta el coche y el iPhone a la misma Wi-Fi.</string>
 </resources>

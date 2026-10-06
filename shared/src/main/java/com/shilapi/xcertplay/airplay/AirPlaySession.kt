@@ -25,6 +25,7 @@ data class AirPlayDeviceInfo(
 
 /** Session lifecycle and command callbacks for the driver/UI layer. */
 interface AirPlaySessionListener {
+    fun onTcpAccepted(event: AirPlayTcpAccepted) {}
     fun onSessionActive(session: AirPlaySession) {}
     fun onSessionEnded(session: AirPlaySession) {}
     fun onVideoFrameRendered(session: AirPlaySession) {}

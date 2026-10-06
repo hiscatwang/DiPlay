@@ -1,4 +1,13 @@
 <resources>
+    <string name="existing_wifi_title">同一 Wi-Fi／局域网</string>
+    <string name="existing_wifi_description">使用路由器、随身 Wi-Fi 或另一台手机的热点。让 iPhone 和车机保持连接同一网络，并通过它上网。</string>
+    <string name="existing_wifi_hint">现有 Wi-Fi · 两台设备保持连接同一 Wi-Fi，蓝牙保持开启，无需开启车机热点。</string>
+    <string name="existing_wifi_instructions">先在系统设置中将车机和 iPhone 连接同一外部 Wi-Fi，再准确填写它的名称和 WPA2 密码；仅开放网络可留空密码。路由器使用 WPA2 或 WPA2/WPA3 混合模式，并关闭客户端隔离。DiPlay 保持此 Wi-Fi 连接，不创建热点。</string>
+    <string name="existing_wifi_details">外部 Wi-Fi 详情</string>
+    <string name="existing_wifi_ssid">外部 Wi-Fi 名称（SSID）</string>
+    <string name="existing_wifi_password">外部 Wi-Fi 密码</string>
+    <string name="existing_wifi_attaching">正在接入现有 Wi-Fi</string>
+    <string name="existing_wifi_ready">现有 Wi-Fi 就绪：%1$s · %2$s · 信道 %3$d · %4$s</string>
     <string name="built_in_car_hotspot">车载热点</string>
     <string name="wifi_direct">Wi-Fi Direct</string>
     <string name="hotspot_hint_manual">车载热点 · 保持车载热点、蓝牙和 iPhone 的 Wi-Fi 开启。</string>
@@ -489,4 +498,9 @@
     <string name="waiting_for_car_hotspot">正在等待车机热点启动，就绪后将自动连接…</string>
     <string name="car_hotspot_startup_hint">热点尚未就绪；连接时会自动等待车机完成启动。</string>
     <string name="car_hotspot_wait_timeout">车机热点尚未就绪，将自动重试；请确认热点已开启。</string>
+    <string name="hotspot_network_not_ready">热点网络未就绪</string>
+    <string name="first_tcp_timeout">等待 iPhone 接入 CarPlay 超时</string>
+    <string name="wireless_startup_retries_exhausted">自动重试已停止，请检查连接后手动重试。</string>
+    <string name="retry_carplay_connection">重新连接</string>
+    <string name="existing_wifi_not_ready">Wi-Fi 网络尚未就绪，请将车机和 iPhone 连接同一 Wi-Fi。</string>
 </resources>
