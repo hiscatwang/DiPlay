@@ -81,7 +81,7 @@
     <string name="resolution_handshake_prefix">Handshake resolution:\u0020</string>
     <string name="safe_area_full_screen_at">Safe area: full screen at\u0020</string>
     <string name="safe_area_mapping_summary">Safe area: %1$d x %2$d at (%3$d, %4$d) in %5$d x %6$d</string>
-    <string name="settings_android9_compat">The following settings are unavailable and hidden on Android 9 (API 28):\n• Wi-Fi P2P (5 GHz) — LocalOnlyHotspot is used instead.\n• HEVC software decoder — hardware decoding is used instead.</string>
+    <string name="settings_android9_compat">Android 8.1/9 supports Wi-Fi Direct with system-selected credentials and frequency. The HEVC software decoder is unavailable; hardware decoding is used.</string>
     <string name="settings_mfi_address_hint">Address must start with http:// or https://. Token is optional and sent as an Authorization bearer token.</string>
     <string name="app_name">Diplay</string>
     <string name="language_section_title">Language</string>
@@ -104,7 +104,7 @@
     <string name="allow_precise_location_for_diplay_in_the_head_unit_s_app_p">Allow precise Location for Diplay in the head unit’s app permissions.</string>
     <string name="allow_the_connection_permission_to_continue">Allow the connection permission to continue</string>
     <string name="an_independent_carplay_receiver_for_android_head_units_wir">An independent CarPlay receiver for Android head units. Wired and wireless connections run on the head unit, with local authentication. A standard iPhone can connect without a jailbreak, Mac, dongle or sign-in.\n\nThis preview uses an experimental accessory identity. Compatibility with every iPhone and head unit is still being tested. It is not an Apple-certified product.</string>
-    <string name="android_9_compatibility">Android 9 compatibility</string>
+    <string name="android_9_compatibility">Android 8.1/9 compatibility</string>
     <string name="app_permissions">App permissions</string>
     <string name="app_settings">App settings</string>
     <string name="apply_and_reconnect">Apply and reconnect</string>
@@ -503,4 +503,5 @@
     <string name="wireless_startup_retries_exhausted">Automatic retries stopped. Check the connection and retry manually.</string>
     <string name="retry_carplay_connection">Retry connection</string>
     <string name="existing_wifi_not_ready">Wi-Fi network is not ready. Connect the car and iPhone to the same Wi-Fi.</string>
+    <string name="hotspot_mode_p2p_legacy_desc">Android 8.1/9: turn on Wi-Fi and allow Location permission. The car selects the network name, password and frequency; 5 GHz cannot be forced. If unsupported by the car, use its hotspot or Same LAN.</string>
 </resources>

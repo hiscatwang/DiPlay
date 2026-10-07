@@ -80,7 +80,7 @@
     <string name="audio_stream_unavailable">Тип потока %1$d недоступен здесь (состояние=%2$d)</string>
     <string name="resolution_handshake_prefix">Разрешение рукопожатия:\u0020</string>
     <string name="safe_area_full_screen_at">Безопасная область: полный экран \u0020</string>
-    <string name="settings_android9_compat">Следующие настройки недоступны и скрыты на Android 9 (API 28):\n• Wi-Fi P2P (5 ГГц) — вместо него используется LocalOnlyHotspot.\n• Программный декодер HEVC — вместо него используется аппаратное декодирование.</string>
+    <string name="settings_android9_compat">Android 8.1/9 поддерживает Wi-Fi Direct: имя сети, пароль и частоту выбирает система. Программный декодер HEVC недоступен; используется аппаратное декодирование.</string>
     <string name="settings_mfi_address_hint">Адрес должен начинаться с http:// или https://. Токен необязателен и отправляется как Authorization bearer token.</string>
     <string name="language_section_title">Язык</string>
     <string name="language_app_language">Язык приложения</string>
@@ -102,7 +102,7 @@
     <string name="allow_precise_location_for_diplay_in_the_head_unit_s_app_p">Разрешите точное «Местоположение» для Diplay в разрешениях приложения головного устройства.</string>
     <string name="allow_the_connection_permission_to_continue">Разрешите подключение, чтобы продолжить</string>
     <string name="an_independent_carplay_receiver_for_android_head_units_wir">Независимый приёмник CarPlay для головных устройств Android. Проводные и беспроводные подключения работают на головном устройстве с локальной аутентификацией. Обычный iPhone может подключиться без джейлбрейка, Mac, переходника или входа в учётную запись.\n\nВ этой предварительной версии используется экспериментальная аксессуарная идентичность. Совместимость со всеми iPhone и головными устройствами ещё тестируется. Продукт не сертифицирован Apple.</string>
-    <string name="android_9_compatibility">Совместимость с Android 9</string>
+    <string name="android_9_compatibility">Совместимость с Android 8.1/9</string>
     <string name="app_permissions">Разрешения приложения</string>
     <string name="app_settings">Настройки приложения</string>
     <string name="apply_and_reconnect">Применить и переподключиться</string>
@@ -504,4 +504,5 @@
     <string name="wireless_startup_retries_exhausted">Автоматические попытки остановлены. Проверьте подключение и повторите попытку вручную.</string>
     <string name="retry_carplay_connection">Повторить подключение</string>
     <string name="existing_wifi_not_ready">Сеть Wi-Fi не готова. Подключите автомобиль и iPhone к одной сети Wi-Fi.</string>
+    <string name="hotspot_mode_p2p_legacy_desc">Android 8.1/9: включите Wi-Fi и разрешите доступ к местоположению. Система автомобиля выбирает имя сети, пароль и частоту; принудительно выбрать 5 ГГц нельзя. Если функция не поддерживается, используйте точку доступа автомобиля или общую локальную сеть.</string>
 </resources>

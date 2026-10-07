@@ -17,7 +17,7 @@ android {
         applicationId = "com.shihab.diplay"
         minSdk = 27
         targetSdk = 37
-        versionCode = 43
+        versionCode = 44
         versionName = "0.2.10"
         ndk {
             abiFilters += listOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
@@ -43,7 +43,7 @@ android {
     buildTypes {
         debug {
             applicationIdSuffix = ".ora81"
-            versionNameSuffix = "-android81-test14-lan-universal"
+            versionNameSuffix = "-android81-test15-wifi-direct-universal"
         }
         release {
             optimization {

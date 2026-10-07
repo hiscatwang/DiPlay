@@ -80,7 +80,7 @@
     <string name="audio_stream_unavailable">流类型 %1$d 在此不可用（状态=%2$d）</string>
     <string name="resolution_handshake_prefix">握手分辨率：</string>
     <string name="safe_area_full_screen_at">安全区域：全屏，</string>
-    <string name="settings_android9_compat">以下设置在 Android 9（API 28）上不可用且已隐藏：\n• Wi-Fi P2P（5 GHz）— 将改用 LocalOnlyHotspot。\n• HEVC 软解码器 — 将改用硬件解码。</string>
+    <string name="settings_android9_compat">Android 8.1/9 支持 Wi-Fi Direct，网络名称、密码和频段由系统分配。HEVC 软解码不可用，使用硬件解码。</string>
     <string name="settings_mfi_address_hint">地址必须以 http:// 或 https:// 开头。令牌为可选项，将作为 Authorization bearer token 发送。</string>
     <string name="a_familiar_drive">熟悉的驾乘体验。</string>
     <string name="a_previous_wi_fi_direct_connection_is_still_running_reset">之前的 Wi-Fi Direct 连接仍在运行。请重置后再连接。</string>
@@ -96,7 +96,7 @@
     <string name="allow_precise_location_for_diplay_in_the_head_unit_s_app_p">请在车机应用权限中允许 Diplay 使用精确位置信息。</string>
     <string name="allow_the_connection_permission_to_continue">请授予连接权限以继续</string>
     <string name="an_independent_carplay_receiver_for_android_head_units_wir">面向 Android 车机的独立 CarPlay 接收器。有线和无线连接均在车机上运行，并使用本地认证。普通 iPhone 无需越狱、Mac、转接器或登录即可连接。\n\n此预览版使用实验性配件身份，仍在测试与不同 iPhone 和车机的兼容性。本产品未经 Apple 认证。</string>
-    <string name="android_9_compatibility">Android 9 兼容性</string>
+    <string name="android_9_compatibility">Android 8.1/9 兼容性</string>
     <string name="app_name">Diplay</string>
     <string name="app_permissions">应用权限</string>
     <string name="app_settings">应用设置</string>
@@ -503,4 +503,5 @@
     <string name="wireless_startup_retries_exhausted">自动重试已停止，请检查连接后手动重试。</string>
     <string name="retry_carplay_connection">重新连接</string>
     <string name="existing_wifi_not_ready">Wi-Fi 网络尚未就绪，请将车机和 iPhone 连接同一 Wi-Fi。</string>
+    <string name="hotspot_mode_p2p_legacy_desc">Android 8.1/9：请开启车机 Wi-Fi 并允许位置权限。网络名称、密码和频段由车机系统分配，不能强制 5 GHz；若车机不支持，请用车载热点或同一局域网。</string>
 </resources>

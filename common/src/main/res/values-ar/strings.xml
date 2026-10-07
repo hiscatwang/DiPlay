@@ -80,7 +80,7 @@
     <string name="audio_stream_unavailable">نوع البث %1$d غير متاح هنا (الحالة=%2$d)</string>
     <string name="resolution_handshake_prefix">دقة المصافحة:\u0020</string>
     <string name="safe_area_full_screen_at">المنطقة الآمنة: ملء الشاشة بحجم\u0020</string>
-    <string name="settings_android9_compat">الإعدادات التالية غير متاحة ومخفية على Android 9 (API 28):\n• Wi-Fi P2P (5 GHz) — يُستخدم LocalOnlyHotspot بدلاً منه.\n• مفكّك HEVC البرمجي — يُستخدم فك الترميز العتادي بدلاً منه.</string>
+    <string name="settings_android9_compat">يدعم Android 8.1/9 اتصال Wi-Fi Direct مع اسم شبكة وكلمة مرور وتردد يحددها النظام. فك ترميز HEVC البرمجي غير متاح؛ يُستخدم فك الترميز العتادي.</string>
     <string name="settings_mfi_address_hint">يجب أن يبدأ العنوان بـ http:// أو https://. الرمز الاختياري ويُرسل كـ Authorization bearer token.</string>
     <string name="language_section_title">اللغة</string>
     <string name="language_app_language">لغة التطبيق</string>
@@ -102,7 +102,7 @@
     <string name="allow_precise_location_for_diplay_in_the_head_unit_s_app_p">اسمح بـ«الموقع الدقيق» لـ Diplay في أذونات تطبيق وحدة القيادة.</string>
     <string name="allow_the_connection_permission_to_continue">اسمح بإذن الاتصال للمتابعة</string>
     <string name="an_independent_carplay_receiver_for_android_head_units_wir">مستقبل CarPlay مستقل لوحدات قيادة Android. تعمل الاتصالات السلكية واللاسلكية على وحدة القيادة مع مصادقة محلية. يمكن لأي iPhone عادي الاتصال دون جيلبريك أو Mac أو جهاز إضافي أو تسجيل دخول.\n\nتستخدم هذه المعاينة هوية ملحق تجريبية. لا تزال التوافقية مع كل iPhone وكل وحدة قيادة قيد الاختبار. هذا المنتج غير معتمد من Apple.</string>
-    <string name="android_9_compatibility">توافق Android 9</string>
+    <string name="android_9_compatibility">التوافق مع Android 8.1/9</string>
     <string name="app_permissions">أذونات التطبيق</string>
     <string name="app_settings">إعدادات التطبيق</string>
     <string name="apply_and_reconnect">تطبيق وإعادة الاتصال</string>
@@ -504,4 +504,5 @@
     <string name="wireless_startup_retries_exhausted">توقفت المحاولات التلقائية. تحقق من الاتصال ثم أعد المحاولة يدويًا.</string>
     <string name="retry_carplay_connection">إعادة محاولة الاتصال</string>
     <string name="existing_wifi_not_ready">شبكة Wi-Fi غير جاهزة. وصّل السيارة وiPhone بشبكة Wi-Fi نفسها.</string>
+    <string name="hotspot_mode_p2p_legacy_desc">Android 8.1/9: شغّل Wi-Fi واسمح بإذن الموقع. يحدد نظام السيارة اسم الشبكة وكلمة المرور والتردد؛ لا يمكن فرض 5 GHz. إذا لم تكن الميزة مدعومة، استخدم نقطة اتصال السيارة أو الشبكة المحلية نفسها.</string>
 </resources>

@@ -2652,7 +2652,7 @@ class CarPlayHostActivity : ComponentActivity() {
         }
         val modes = AirPlayPersistence.availableWirelessHotspotModes().map { mode ->
             mode to getString(when (mode) {
-                WirelessHotspotMode.WIFI_P2P -> R.string.wi_fi_p2p_5_ghz
+                WirelessHotspotMode.WIFI_P2P -> R.string.wifi_direct
                 WirelessHotspotMode.EXISTING_WIFI -> R.string.existing_wifi_title
                 else -> R.string.built_in_car_hotspot
             })
@@ -2888,7 +2888,7 @@ class CarPlayHostActivity : ComponentActivity() {
     }
 
     private fun hotspotModeLabel(mode: WirelessHotspotMode): String = when (mode) {
-        WirelessHotspotMode.WIFI_P2P -> getString(R.string.wi_fi_p2p_5_ghz)
+        WirelessHotspotMode.WIFI_P2P -> getString(R.string.wifi_direct)
         WirelessHotspotMode.LOCAL_ONLY_HOTSPOT -> getString(R.string.localonlyhotspot)
         WirelessHotspotMode.MANUAL -> getString(R.string.manual_hotspot)
         WirelessHotspotMode.EXISTING_WIFI -> getString(R.string.existing_wifi_title)

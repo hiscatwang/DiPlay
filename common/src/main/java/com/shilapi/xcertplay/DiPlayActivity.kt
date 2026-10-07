@@ -689,7 +689,8 @@ class DiPlayActivity : ComponentActivity() {
         }) }
         val descriptions = modes.map { getString(when (it) {
             WirelessHotspotMode.MANUAL, WirelessHotspotMode.LOCAL_ONLY_HOTSPOT -> R.string.hotspot_mode_manual_desc
-            WirelessHotspotMode.WIFI_P2P -> R.string.hotspot_mode_p2p_desc
+            WirelessHotspotMode.WIFI_P2P -> if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q)
+                R.string.hotspot_mode_p2p_legacy_desc else R.string.hotspot_mode_p2p_desc
             WirelessHotspotMode.EXISTING_WIFI -> R.string.existing_wifi_description
         }) }
         val wide = resources.configuration.screenWidthDp >= 850

@@ -46,9 +46,13 @@ internal object P2pStartupRecovery {
         stationFrequency: Int?,
         beforeRetry: () -> Unit,
         preferred: P2pCreationRequest? = null,
+        configurableGroup: Boolean = true,
         request: (P2pCreationRequest) -> Unit,
     ): P2pCreationRequest {
-        val modes = plan(stationFrequency, preferred)
+        // Android 8.1/9 only exposes system-selected credentials and channel. Do not
+        // repeat the same legacy request for every unsupported frequency in the plan.
+        val modes = if (configurableGroup) plan(stationFrequency, preferred)
+            else listOf(P2pCreationRequest(P2pCreationMode.SYSTEM_DEFAULT))
         var lastRejection: P2pCreateRejected? = null
         for ((index, mode) in modes.withIndex()) {
             var retriedBusy = false

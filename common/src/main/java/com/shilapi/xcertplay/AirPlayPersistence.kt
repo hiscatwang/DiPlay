@@ -287,9 +287,8 @@ object AirPlayPersistence {
     }
 
     fun availableWirelessHotspotModes(): List<WirelessHotspotMode> =
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            listOf(WirelessHotspotMode.MANUAL, WirelessHotspotMode.WIFI_P2P, WirelessHotspotMode.EXISTING_WIFI)
-        } else listOf(WirelessHotspotMode.MANUAL, WirelessHotspotMode.EXISTING_WIFI)
+        // Basic group creation and owner credentials are available on Android 8.1 too.
+        listOf(WirelessHotspotMode.MANUAL, WirelessHotspotMode.WIFI_P2P, WirelessHotspotMode.EXISTING_WIFI)
 
     fun loadWirelessHotspotMode(context: Context): WirelessHotspotMode {
         val prefs = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)

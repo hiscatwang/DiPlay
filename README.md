@@ -3,8 +3,16 @@
 基于 [shihabal3amri/DiPlay](https://github.com/shihabal3amri/DiPlay) 及本项目的欧拉好猫哈曼适配版本，
 为 Android 8.1 及以上系统增加 ARM 架构支持。保留原作者及贡献者署名。
 
-本分支 `android81-universal` 对应 **v14 通用版源码**；v10、v11 保持各自功能，
+本分支 `android81-universal` 对应 **v15 通用版源码**；v10、v11 保持各自功能，
 完整对应源码以发布页单独标注版本的 `*-source.zip` 提供。
+
+## v15 更新
+
+- 修复 Android 8.1 / 9 缺少 Wi-Fi Direct 选项，补齐旧版创建接口与系统生成凭据的读取。
+- 不再暗中切换为 LocalOnlyHotspot；未知信道不再阻止启动，不误报 5 GHz。
+- 保留 v14 的所有连接与音频适配。旧系统频段由车机固件选择，真实车机连接仍需验证。
+
+使用方法和限制见 [v15 更新说明](docs/V15_ANDROID81_WIFI_DIRECT.md)。
 
 ## v14 更新
 
@@ -19,6 +27,8 @@
 
 ## 下载与安装
 
+[下载 v15 Android 8.1 Wi-Fi Direct 兼容版 APK、源码和校验文件](https://github.com/hiscatwang/DiPlay/releases/tag/v0.2.10-universal-v15-wifi-direct)。
+
 [下载 v14 通用版 APK、源码和校验文件](https://github.com/hiscatwang/DiPlay/releases/tag/v0.2.10-universal-v14-lan)。
 
 
@@ -31,6 +41,7 @@
 | v11 | v10 功能，加开机热点等待修复 | 40 |
 | v12 | v11 功能，加 Siri 跟随导航音道 | 41 |
 | v14 | v12 通用版功能，加同一局域网与连接超时重试 | 43 |
+| v15 | v14 功能，加 Android 8.1 / 9 Wi-Fi Direct 兼容 | 44 |
 
 CarPlay 返回车机入口统一使用现有绿色 DiPlay 图标，默认文字为“返回车机”。
 覆盖安装时，旧的欧拉/比亚迪默认名称自动迁移，其他自定义名称和手动上传的图标保留。
@@ -50,7 +61,7 @@ CarPlay 返回车机入口统一使用现有绿色 DiPlay 图标，默认文字�
 ## 源码与许可
 
 构建说明见 [docs/MULTI_ABI.md](docs/MULTI_ABI.md)，历史欧拉适配见
-[docs/ORA_ANDROID81.md](docs/ORA_ANDROID81.md)。发布页自动生成的 Source code 是本分支的 v14 源码；
+[docs/ORA_ANDROID81.md](docs/ORA_ANDROID81.md)。发布页自动生成的 Source code 是本分支的 v15 源码；
 v10、v11 请下载各自的 `*-source.zip`。
 
 本项目面向个人研究、车友交流和非商业维护；不改变原有 GPL/AGPL 代码许可赋予的权利。
